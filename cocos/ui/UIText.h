@@ -240,7 +240,7 @@ public:
      *
      * @param color Text color.
      */
-    void setTextColor(const Color4B color);
+    void setTextColor(const Color4B& color);
 
     /** Gets text color.
      *
@@ -368,6 +368,10 @@ protected:
     Label* _labelRenderer;
     bool _labelRendererAdaptDirty;
     Type _type;
+
+#ifdef CC_ENABLE_RTTR
+    RTTR_ENABLE(Widget)
+#endif
 };
 
 }

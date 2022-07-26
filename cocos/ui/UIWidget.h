@@ -847,6 +847,10 @@ protected:
 private:
     class FocusNavigationController;
     static FocusNavigationController* _focusNavigationController;
+
+#ifdef CC_ENABLE_RTTR
+    RTTR_ENABLE(Node)
+#endif
 };
 }
 

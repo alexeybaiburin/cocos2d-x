@@ -170,6 +170,10 @@ protected:
     Size _imageTextureSize;
     bool _imageRendererAdaptDirty;
     std::string _textureFile;
+
+#ifdef CC_ENABLE_RTTR
+    RTTR_ENABLE(Widget)
+#endif
 };
 
 }

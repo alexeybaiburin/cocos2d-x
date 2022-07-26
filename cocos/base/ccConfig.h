@@ -357,3 +357,12 @@ THE SOFTWARE.
 #ifndef CC_STRIP_FPS
 #define CC_STRIP_FPS 0
 #endif
+
+
+/** @def CC_ENABLE_RTTR
+ * Enables RunTime Type Reflection.
+ * Disabled by default.
+ */
+#ifndef CC_ENABLE_RTTR
+#define CC_ENABLE_RTTR 0
+#endif

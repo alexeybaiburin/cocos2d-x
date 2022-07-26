@@ -385,6 +385,10 @@ protected:
 
 private:
     std::string _fontName;
+
+#ifdef CC_ENABLE_RTTR
+    RTTR_ENABLE(Widget)
+#endif
 };
 
 }

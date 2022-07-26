@@ -44,6 +44,10 @@
 #include "physics/CCPhysicsBody.h"
 #endif
 
+#ifdef CC_ENABLE_RTTR
+#include <rttr/registration>
+#endif
+
 NS_CC_BEGIN
 
 class GridBase;
@@ -1948,7 +1952,11 @@ public:
 #endif
 
     static int __attachedNodeCount;
-    
+
+#ifdef CC_ENABLE_RTTR
+    RTTR_ENABLE()
+#endif
+
 private:
     CC_DISALLOW_COPY_AND_ASSIGN(Node);
 };
